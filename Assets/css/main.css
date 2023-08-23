@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 65%;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.logo-name {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: rgb(32, 166, 98);
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 58px;
+  font-weight: bold;
+  color: #130f40;
+  line-height: 65px;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: bold;
+  color: #130f40;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6%;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+.header .logo {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: rgb(32, 166, 98);
+}
+.header .navbar a {
+  margin: 0 27px;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  color: #666;
+}
+.header .navbar a:hover {
+  color: rgb(240, 134, 25);
+}
+.header .icons div {
+  cursor: pointer;
+  font-size: 25px;
+  margin-left: 24px;
+  color: #130f40;
+}
+.header .icons div:hover {
+  color: rgb(240, 134, 25);
+}
+
+main .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  background-color: #f0f0f0;
+}
+main .container div.intro {
+  margin-left: 170px;
+}
+main .container div.intro p {
+  margin: 25px 0;
+}
+main .container .start-for-free-btn {
+  background-color: rgb(240, 134, 25);
+  color: #fff;
+  border-radius: 7px;
+  border: solid;
+  padding: 12px 85px;
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+main .container .start-for-free-btn:hover {
+  background-color: rgb(204, 113, 17);
+}
+main .container div.image {
+  width: 60%;
+}
+main .container div.image img {
+  width: 100%;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+.about .image {
+  flex-wrap: wrap;
+  flex: 1 1 40rem;
+  margin-left: 160px;
+  margin-top: 100px;
+}
+.about .image img {
+  width: 500px;
+  height: 500px;
+}
+.about .content {
+  flex: 1 1 40rem;
+}
+.about .content .explore-more-btn {
+  background-color: rgb(240, 134, 25);
+  color: #fff;
+  border-radius: 7px;
+  border: solid;
+  padding: 12px 85px;
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+.about .content .explore-more-btn:hover {
+  background-color: rgb(204, 113, 17);
+}
+.about p {
+  margin: 25px 0px;
+}
+
+.services {
+  text-align: center;
+  padding: 80px 50px;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  background-color: #f0f0f0;
+}
+.services .box-container {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0.1rem, 1fr));
+  gap: 1.5rem;
+}
+.services .box-container .box {
+  margin: 0 10px;
+}
+.services .box-container .box img {
+  max-width: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  background-color: #f8f8f8;
+  padding: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.services .box-container .box h5 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.blogs {
+  text-align: center;
+  padding: 80px 0;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+.blogs a {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(240, 134, 25);
+}
+.blogs .box-container {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blogs .box-container .box {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  width: 300px;
+  margin-left: 10px;
+}
+.blogs .box-container .box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 15px;
+}
+.blogs .box-container .box h5 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.plan {
+  background-color: #f0f0f0;
+  padding: 80px 0;
+  text-align: center;
+}
+.plan .box-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plan .box-container .box {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 40px;
+  margin: 10px;
+  text-align: center;
+}
+.plan .box-container .box .amount {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.plan .box-container .box .list {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.plan .box-container .box .list p {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+.plan .box-container .box .list p .fas.fa-check {
+  margin-left: auto;
+  color: rgb(32, 166, 98);
+}
+.plan .box-container .box .list p .fas.fa-times {
+  margin-left: auto;
+  color: rgb(204, 113, 17);
+}
+.plan .box-container .box .plan-btn {
+  background-color: rgb(240, 134, 25);
+  color: #fff;
+  border-radius: 7px;
+  border: solid;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+.plan .box-container .box .plan-btn:hover {
+  background-color: rgb(204, 113, 17);
+}
+
+.subscription {
+  padding: 100px 0;
+  background: url("/Assets/img/subscription-background.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.subscription .content {
+  text-align: center;
+}
+.subscription .content form {
+  margin-top: 30px;
+}
+.subscription .content form input {
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  vertical-align: middle;
+}
+.subscription .content form .email {
+  width: 300px;
+}
+.subscription .content form .subscribe-btn {
+  vertical-align: middle;
+  background-color: rgb(240, 134, 25);
+  color: #fff;
+  border-radius: 7px;
+  border: solid;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+.subscription .content form .subscribe-btn:hover {
+  background-color: rgb(204, 113, 17);
+}
+
+footer {
+  height: 100px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem 6%;
+}
+footer .extra-links a {
+  margin: 0 27px;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #666;
+}
+footer .extra-links a:hover {
+  color: rgb(240, 134, 25);
+}
+footer .copyright {
+  font-size: 1.7rem;
+}/*# sourceMappingURL=main.css.map */

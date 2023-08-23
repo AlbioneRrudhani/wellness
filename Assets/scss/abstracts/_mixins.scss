@@ -1,0 +1,61 @@
+@mixin button-style($padding, $font-size) {
+    background-color: $orange;
+    color: $white;
+    border-radius: 7px;
+    border: solid;
+    padding: $padding;
+    font-weight: bold;
+    font-size: $font-size;
+    cursor: pointer;
+    transition: background-color 0.15s;
+
+    &:hover {
+        background-color: $darkOrange;
+    }
+}
+
+
+@mixin flex-container($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+@mixin typography($size, $weight, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin grid($value){
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($value, 1fr));
+    gap: 1.5rem;
+}
+
+@mixin hover-color($color) {
+    &:hover {
+        color: $color;
+    }
+}
+
+
+@mixin wrap-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@mixin content($size, $line-height) {
+    font-size: $size;
+    line-height: $line-height;
+}
+

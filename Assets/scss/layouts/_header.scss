@@ -1,0 +1,25 @@
+.header {
+    @include flex-container(space-between, center);
+
+    padding: 2rem 6%;
+    box-shadow: $box-shadow;
+
+    .logo {
+        @include typography(2.0rem, bolder, $green);
+    }
+
+    .navbar a {
+        margin: 0 27px;
+        @include typography(1.7rem, bolder, $gray);
+        @include hover-color($orange);
+    }
+
+    .icons div {
+        cursor: pointer;
+        font-size: 25px;
+        margin-left: 24px;
+        color: $black;
+        @include hover-color($orange);
+    }
+}
+

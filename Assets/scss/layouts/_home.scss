@@ -1,0 +1,31 @@
+main .container {
+    @include flex-container(space-between, center);
+    box-shadow: $box-shadow;
+    background-color: $light-gray;
+
+    div.intro {
+        margin-left: 170px;
+
+        p {
+            margin: 25px 0;
+        }
+    }
+
+
+    .start-for-free-btn {
+        @include button-style(12px 85px, 17px);
+    }
+
+
+    div.image {
+        width: 60%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+
+

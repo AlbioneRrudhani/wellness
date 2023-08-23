@@ -1,0 +1,37 @@
+.about {
+    @include flex-container(space-between, center);
+    gap: 2rem;
+    box-shadow: $box-shadow;
+    flex-wrap: wrap;
+
+    .image {
+        flex-wrap: wrap;
+        flex: 1 1 40rem;
+        margin-left: 160px;
+        margin-top: 100px;
+
+        img {
+            width: 500px;
+            height: 500px;
+        }
+
+    }
+
+    .content {
+        flex: 1 1 40rem;
+
+        .explore-more-btn {
+            @include button-style(12px 85px, 17px);
+        }
+    }
+
+    p {
+        margin: 25px 0px;
+
+    }
+}
+
+
+
+
+

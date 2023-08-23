@@ -1,0 +1,42 @@
+.blogs {
+    text-align: center;
+    padding: 80px 0;
+    box-shadow: $box-shadow;
+
+    a {
+        @include typography(15px, bold, $orange)
+    }
+
+    .box-container {
+        margin-top: 60px;
+
+        @include flex-center;
+
+
+
+        .box {
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: $box-shadow;
+            margin-bottom: 30px;
+            width: 300px;
+            margin-left: 10px;
+
+            img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+                border-radius: 10px 10px 0 0;
+                margin-bottom: 15px;
+            }
+
+            h5 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+
+}

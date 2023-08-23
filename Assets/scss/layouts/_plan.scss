@@ -1,0 +1,57 @@
+.plan {
+    background-color: $light-gray;
+    padding: 80px 0;
+    text-align: center;
+
+    .box-container {
+        margin-top: 50px;
+        @include flex-center;
+
+
+        .box {
+            width: 300px;
+            background-color: $white;
+            border-radius: 10px;
+            padding: 40px;
+            margin: 10px;
+            text-align: center;
+
+
+            .amount {
+                font-size: 36px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+
+            .list {
+                text-align: left;
+                margin-bottom: 20px;
+
+                p {
+                    margin: 8px 0;
+                    display: flex;
+                    align-items: center;
+                    font-size: 12px;
+
+                    .fas.fa-check {
+                        margin-left: auto;
+                        color: $green;
+                    }
+
+                    .fas.fa-times {
+                        margin-left: auto;
+                        color: $darkOrange;
+                    }
+                }
+            }
+
+            .plan-btn {
+                @include button-style(10px 20px, 15px);
+
+            }
+        }
+    }
+}
+
+
+

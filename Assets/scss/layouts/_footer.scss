@@ -1,0 +1,20 @@
+footer {
+    height: 100px;
+    background-color: $light-gray;
+    @include flex-container(space-around, center);
+
+    padding: 3rem 6%;
+
+    .extra-links a {
+        margin: 0 27px;
+        @include typography(1.7rem, bold, $gray);
+        @include hover-color($orange);
+    }
+
+    .copyright {
+        font-size: 1.7rem;
+    }
+
+
+}
+
