@@ -30,3 +30,50 @@
     }
 }
 
+
+@media screen and (max-width: 799px) {
+
+    .services {
+        padding: 30px;
+
+        .box-container {
+            .box {
+                margin: 20px 10px;
+
+                h5 {
+                    font-size: 18px;
+                }
+
+            }
+        }
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .services {
+        h3 {
+            padding-bottom: 25px;
+        }
+
+        .box-container {
+
+            .box {
+
+                img {
+                    max-width: 55px; 
+                }
+
+                h5 {
+                    font-size: 14px;
+                }
+
+                p {
+                    font-size: 10px;
+                    line-height: 1.2; 
+                }
+            }
+        }
+    }
+}

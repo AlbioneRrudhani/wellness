@@ -59,3 +59,11 @@
     line-height: $line-height;
 }
 
+
+// breakpoints
+
+@mixin max-width($width) {
+    @media (max-width: $width) {
+      @content;
+    }
+  }

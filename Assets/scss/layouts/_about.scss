@@ -32,6 +32,49 @@
 }
 
 
+@media screen and (max-width: 799px) {
+    .about {
+        height: auto;
 
+        .image {
+            margin: 20px auto;
+            @include flex-center;
+
+            img {
+                width: 70%;
+                height: auto;
+            }
+        }
+
+        .content {
+            margin: 10px 20px;
+
+            p {
+                @include flex-center;
+
+            }
+
+            .explore-more-btn {
+                margin: 30px 225px;
+
+
+            }
+        }
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .about {
+        .content {
+            .explore-more-btn {
+                margin: 25px;
+                @include button-style(10px 65px, 14px); 
+            }
+        }
+    }
+
+}
 
 

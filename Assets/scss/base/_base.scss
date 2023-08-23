@@ -39,12 +39,31 @@ body {
 
 p {
     @include content(1.5rem, 1.5);
+
+
+    @include max-width(779px) {
+        @include content(16px, 2rem);
+    }
+
+    @include max-width(576px) {
+        @include content(15px, 2rem);
+    }
 }
 
 
 h1 {
     @include typography(58px, bold, $black);
     line-height: 65px;
+
+    @include max-width(799px) {
+        @include typography(50px, bold, $black);
+        line-height: 48px;
+    }
+
+    @include max-width(576px) {
+        @include typography(40px, bold, $black);
+        line-height: 1.1;
+    }
 }
 
 
@@ -52,4 +71,13 @@ h1 {
 .title {
     @include typography(42px, bold, $black);
 
+    @include max-width(779px) {
+        @include typography(38px, bold, $black);
+        @include flex-center;
+    }
+
+    @include max-width(576px) {
+        @include typography(30px, bold, $black);
+        @include flex-center;
+    }
 }

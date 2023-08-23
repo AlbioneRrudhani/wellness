@@ -38,6 +38,18 @@ p {
   font-size: 1.5rem;
   line-height: 1.5;
 }
+@media (max-width: 779px) {
+  p {
+    font-size: 16px;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  p {
+    font-size: 15px;
+    line-height: 2rem;
+  }
+}
 
 h1 {
   font-size: 58px;
@@ -45,11 +57,47 @@ h1 {
   color: #130f40;
   line-height: 65px;
 }
+@media (max-width: 799px) {
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #130f40;
+    line-height: 48px;
+  }
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #130f40;
+    line-height: 1.1;
+  }
+}
 
 .title {
   font-size: 42px;
   font-weight: bold;
   color: #130f40;
+}
+@media (max-width: 779px) {
+  .title {
+    font-size: 38px;
+    font-weight: bold;
+    color: #130f40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 576px) {
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #130f40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .header {
@@ -83,6 +131,22 @@ h1 {
   color: rgb(240, 134, 25);
 }
 
+@media screen and (max-width: 799px) {
+  .header {
+    padding: 1rem 4%;
+  }
+  .navbar a {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .header .logo {
+    font-size: 1.5rem;
+  }
+  .header .icons div {
+    margin-left: 12px;
+  }
+}
 main .container {
   display: flex;
   justify-content: space-between;
@@ -117,6 +181,31 @@ main .container div.image img {
   width: 100%;
 }
 
+@media screen and (max-width: 799px) {
+  main .container div.intro {
+    width: 80%;
+    margin: 70px auto;
+  }
+  main .container div.image {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  main .container .start-for-free-btn {
+    background-color: rgb(240, 134, 25);
+    color: #fff;
+    border-radius: 7px;
+    border: solid;
+    padding: 10px 65px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+  }
+  main .container .start-for-free-btn:hover {
+    background-color: rgb(204, 113, 17);
+  }
+}
 .about {
   display: flex;
   justify-content: space-between;
@@ -156,6 +245,49 @@ main .container div.image img {
   margin: 25px 0px;
 }
 
+@media screen and (max-width: 799px) {
+  .about {
+    height: auto;
+  }
+  .about .image {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about .image img {
+    width: 70%;
+    height: auto;
+  }
+  .about .content {
+    margin: 10px 20px;
+  }
+  .about .content p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about .content .explore-more-btn {
+    margin: 30px 225px;
+  }
+}
+@media (max-width: 576px) {
+  .about .content .explore-more-btn {
+    margin: 25px;
+    background-color: rgb(240, 134, 25);
+    color: #fff;
+    border-radius: 7px;
+    border: solid;
+    padding: 10px 65px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+  }
+  .about .content .explore-more-btn:hover {
+    background-color: rgb(204, 113, 17);
+  }
+}
 .services {
   text-align: center;
   padding: 80px 50px;
@@ -184,6 +316,32 @@ main .container div.image img {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 799px) {
+  .services {
+    padding: 30px;
+  }
+  .services .box-container .box {
+    margin: 20px 10px;
+  }
+  .services .box-container .box h5 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 576px) {
+  .services h3 {
+    padding-bottom: 25px;
+  }
+  .services .box-container .box img {
+    max-width: 55px;
+  }
+  .services .box-container .box h5 {
+    font-size: 14px;
+  }
+  .services .box-container .box p {
+    font-size: 10px;
+    line-height: 1.2;
+  }
+}
 .blogs {
   text-align: center;
   padding: 80px 0;
@@ -221,6 +379,16 @@ main .container div.image img {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 799px) {
+  .blogs a {
+    font-size: 18px;
+  }
+  .blogs .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .plan {
   background-color: #f0f0f0;
   padding: 80px 0;
@@ -278,6 +446,43 @@ main .container div.image img {
   background-color: rgb(204, 113, 17);
 }
 
+@media screen and (max-width: 799px) {
+  .plan .box-container .box {
+    max-width: 240px;
+  }
+}
+@media (max-width: 576px) {
+  .plan .box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .plan .box-container .box h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .plan .box-container .box .amount {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .plan .box-container .box .list p {
+    font-size: 10px;
+  }
+  .plan .box-container .box .plan-btn {
+    background-color: rgb(240, 134, 25);
+    color: #fff;
+    border-radius: 7px;
+    border: solid;
+    padding: 8px 15px;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+  }
+  .plan .box-container .box .plan-btn:hover {
+    background-color: rgb(204, 113, 17);
+  }
+}
 .subscription {
   padding: 100px 0;
   background: url("/Assets/img/subscription-background.jpg") no-repeat;
@@ -317,6 +522,36 @@ main .container div.image img {
   background-color: rgb(204, 113, 17);
 }
 
+@media (max-width: 576px) {
+  .subscription {
+    padding: 40px 0;
+  }
+  .subscription .content .title {
+    padding-bottom: 25px;
+  }
+  .subscription .content form input {
+    margin-right: 5px;
+    padding: 8px;
+    font-size: 14px;
+  }
+  .subscription .content form .email {
+    width: 60%;
+  }
+  .subscription .content form .subscribe-btn {
+    background-color: rgb(240, 134, 25);
+    color: #fff;
+    border-radius: 7px;
+    border: solid;
+    padding: 8px 15px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+  }
+  .subscription .content form .subscribe-btn:hover {
+    background-color: rgb(204, 113, 17);
+  }
+}
 footer {
   height: 100px;
   background-color: #f0f0f0;
@@ -336,4 +571,32 @@ footer .extra-links a:hover {
 }
 footer .copyright {
   font-size: 1.7rem;
+}
+
+@media screen and (max-width: 799px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4%;
+  }
+  footer .extra-links a {
+    margin: 0 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #666;
+  }
+  footer .copyright {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 576px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .extra-links {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

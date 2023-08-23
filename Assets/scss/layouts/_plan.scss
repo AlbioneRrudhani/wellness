@@ -55,3 +55,54 @@
 
 
 
+@media screen and (max-width: 799px) {
+
+    .plan {
+        .box-container {
+            .box {
+                max-width: 240px;
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (max-width: 576px) {
+    .plan {
+
+
+        .box-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .box {
+
+                h3 {
+                    font-size: 20px;
+                    margin-bottom: 8px;
+                }
+
+                .amount {
+                    font-size: 28px;
+                    margin-bottom: 10px;
+                }
+
+                .list {
+
+                    p {
+                        font-size: 10px;
+                    }
+                }
+
+                .plan-btn {
+                    @include button-style(8px 15px, 12px);
+                }
+            }
+        }
+    }
+
+}

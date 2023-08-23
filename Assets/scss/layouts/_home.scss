@@ -29,3 +29,25 @@ main .container {
 
 
 
+@media screen and (max-width: 799px) {
+    main .container {
+        div.intro {
+            width: 80%;
+            margin: 70px auto;
+        }
+
+        div.image {
+            display: none;
+        }
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    main .container {
+        .start-for-free-btn {
+            @include button-style(10px 65px, 14px);
+        }
+    }
+}

@@ -23,3 +23,27 @@
     }
 }
 
+
+
+@media screen and (max-width: 799px) {
+    .header {
+        padding: 1rem 4%;
+    }
+    .navbar a {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    .header {
+        .logo {
+            font-size: 1.5rem;
+        }
+        .icons div {
+            margin-left: 12px;
+        }
+
+    }
+}

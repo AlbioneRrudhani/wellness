@@ -18,3 +18,33 @@ footer {
 
 }
 
+
+@media screen and (max-width: 799px) {
+    footer {
+        @include flex-container(space-between, center);
+
+        padding: 2rem 4%;
+
+        .extra-links a {
+            margin: 0 20px;
+            @include typography(1.5rem, bold, $gray);
+
+        }
+
+        .copyright {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+
+@media (max-width: 576px) {
+    footer {
+        @include flex-center;
+
+        .extra-links {
+            display: none;
+        }
+    }
+
+}
