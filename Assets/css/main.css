@@ -91,12 +91,82 @@ h1 {
 }
 @media (max-width: 576px) {
   .title {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     color: #130f40;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+.explore-more-btn,
+.start-for-free-btn {
+  background-color: rgb(240, 134, 25);
+  color: #fff;
+  border-radius: 7px;
+  border: solid;
+  padding: 12px 85px;
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+.explore-more-btn:hover,
+.start-for-free-btn:hover {
+  background-color: rgb(204, 113, 17);
+}
+@media (max-width: 576px) {
+  .explore-more-btn,
+  .start-for-free-btn {
+    background-color: rgb(240, 134, 25);
+    color: #fff;
+    border-radius: 7px;
+    border: solid;
+    padding: 10px 65px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+  }
+  .explore-more-btn:hover,
+  .start-for-free-btn:hover {
+    background-color: rgb(204, 113, 17);
+  }
+}
+
+.plan-btn,
+.subscribe-btn {
+  background-color: rgb(240, 134, 25);
+  color: #fff;
+  border-radius: 7px;
+  border: solid;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+.plan-btn:hover,
+.subscribe-btn:hover {
+  background-color: rgb(204, 113, 17);
+}
+@media (max-width: 576px) {
+  .plan-btn,
+  .subscribe-btn {
+    background-color: rgb(240, 134, 25);
+    color: #fff;
+    border-radius: 7px;
+    border: solid;
+    padding: 8px 15px;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+  }
+  .plan-btn:hover,
+  .subscribe-btn:hover {
+    background-color: rgb(204, 113, 17);
   }
 }
 
@@ -160,20 +230,6 @@ main .container div.intro {
 main .container div.intro p {
   margin: 25px 0;
 }
-main .container .start-for-free-btn {
-  background-color: rgb(240, 134, 25);
-  color: #fff;
-  border-radius: 7px;
-  border: solid;
-  padding: 12px 85px;
-  font-weight: bold;
-  font-size: 17px;
-  cursor: pointer;
-  transition: background-color 0.15s;
-}
-main .container .start-for-free-btn:hover {
-  background-color: rgb(204, 113, 17);
-}
 main .container div.image {
   width: 60%;
 }
@@ -188,22 +244,6 @@ main .container div.image img {
   }
   main .container div.image {
     display: none;
-  }
-}
-@media (max-width: 576px) {
-  main .container .start-for-free-btn {
-    background-color: rgb(240, 134, 25);
-    color: #fff;
-    border-radius: 7px;
-    border: solid;
-    padding: 10px 65px;
-    font-weight: bold;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.15s;
-  }
-  main .container .start-for-free-btn:hover {
-    background-color: rgb(204, 113, 17);
   }
 }
 .about {
@@ -226,20 +266,6 @@ main .container div.image img {
 }
 .about .content {
   flex: 1 1 40rem;
-}
-.about .content .explore-more-btn {
-  background-color: rgb(240, 134, 25);
-  color: #fff;
-  border-radius: 7px;
-  border: solid;
-  padding: 12px 85px;
-  font-weight: bold;
-  font-size: 17px;
-  cursor: pointer;
-  transition: background-color 0.15s;
-}
-.about .content .explore-more-btn:hover {
-  background-color: rgb(204, 113, 17);
 }
 .about p {
   margin: 25px 0px;
@@ -274,18 +300,6 @@ main .container div.image img {
 @media (max-width: 576px) {
   .about .content .explore-more-btn {
     margin: 25px;
-    background-color: rgb(240, 134, 25);
-    color: #fff;
-    border-radius: 7px;
-    border: solid;
-    padding: 10px 65px;
-    font-weight: bold;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.15s;
-  }
-  .about .content .explore-more-btn:hover {
-    background-color: rgb(204, 113, 17);
   }
 }
 .services {
@@ -431,20 +445,6 @@ main .container div.image img {
   margin-left: auto;
   color: rgb(204, 113, 17);
 }
-.plan .box-container .box .plan-btn {
-  background-color: rgb(240, 134, 25);
-  color: #fff;
-  border-radius: 7px;
-  border: solid;
-  padding: 10px 20px;
-  font-weight: bold;
-  font-size: 15px;
-  cursor: pointer;
-  transition: background-color 0.15s;
-}
-.plan .box-container .box .plan-btn:hover {
-  background-color: rgb(204, 113, 17);
-}
 
 @media screen and (max-width: 799px) {
   .plan .box-container .box {
@@ -467,20 +467,6 @@ main .container div.image img {
   }
   .plan .box-container .box .list p {
     font-size: 10px;
-  }
-  .plan .box-container .box .plan-btn {
-    background-color: rgb(240, 134, 25);
-    color: #fff;
-    border-radius: 7px;
-    border: solid;
-    padding: 8px 15px;
-    font-weight: bold;
-    font-size: 12px;
-    cursor: pointer;
-    transition: background-color 0.15s;
-  }
-  .plan .box-container .box .plan-btn:hover {
-    background-color: rgb(204, 113, 17);
   }
 }
 .subscription {
@@ -508,18 +494,6 @@ main .container div.image img {
 }
 .subscription .content form .subscribe-btn {
   vertical-align: middle;
-  background-color: rgb(240, 134, 25);
-  color: #fff;
-  border-radius: 7px;
-  border: solid;
-  padding: 10px 20px;
-  font-weight: bold;
-  font-size: 15px;
-  cursor: pointer;
-  transition: background-color 0.15s;
-}
-.subscription .content form .subscribe-btn:hover {
-  background-color: rgb(204, 113, 17);
 }
 
 @media (max-width: 576px) {
@@ -536,20 +510,6 @@ main .container div.image img {
   }
   .subscription .content form .email {
     width: 60%;
-  }
-  .subscription .content form .subscribe-btn {
-    background-color: rgb(240, 134, 25);
-    color: #fff;
-    border-radius: 7px;
-    border: solid;
-    padding: 8px 15px;
-    font-weight: bold;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.15s;
-  }
-  .subscription .content form .subscribe-btn:hover {
-    background-color: rgb(204, 113, 17);
   }
 }
 footer {

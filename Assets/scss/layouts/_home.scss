@@ -11,12 +11,6 @@ main .container {
         }
     }
 
-
-    .start-for-free-btn {
-        @include button-style(12px 85px, 17px);
-    }
-
-
     div.image {
         width: 60%;
 
@@ -42,12 +36,3 @@ main .container {
     }
 }
 
-
-
-@media (max-width: 576px) {
-    main .container {
-        .start-for-free-btn {
-            @include button-style(10px 65px, 14px);
-        }
-    }
-}

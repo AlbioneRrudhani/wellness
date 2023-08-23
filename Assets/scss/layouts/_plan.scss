@@ -44,11 +44,6 @@
                     }
                 }
             }
-
-            .plan-btn {
-                @include button-style(10px 20px, 15px);
-
-            }
         }
     }
 }
@@ -96,10 +91,6 @@
                     p {
                         font-size: 10px;
                     }
-                }
-
-                .plan-btn {
-                    @include button-style(8px 15px, 12px);
                 }
             }
         }

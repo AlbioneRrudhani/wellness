@@ -19,10 +19,6 @@
 
     .content {
         flex: 1 1 40rem;
-
-        .explore-more-btn {
-            @include button-style(12px 85px, 17px);
-        }
     }
 
     p {
@@ -65,16 +61,12 @@
 
 
 @media (max-width: 576px) {
-
     .about {
         .content {
             .explore-more-btn {
                 margin: 25px;
-                @include button-style(10px 65px, 14px); 
             }
         }
     }
 
 }
-
-

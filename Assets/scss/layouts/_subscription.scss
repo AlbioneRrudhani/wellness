@@ -7,7 +7,6 @@
     .content {
         text-align: center;
 
-
         form {
             margin-top: 30px;
 
@@ -26,8 +25,6 @@
 
             .subscribe-btn {
                 vertical-align: middle;
-                @include button-style(10px 20px, 15px);
-
             }
         }
 
@@ -40,9 +37,6 @@
 @media (max-width: 576px) {
     .subscription {
         padding: 40px 0;
-
-
-
 
         .content {
 
@@ -60,10 +54,6 @@
 
                 .email {
                     width: 60%;
-                }
-
-                .subscribe-btn {
-                    @include button-style(8px 15px, 14px);
                 }
             }
         }
